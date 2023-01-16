@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/darkbg"
+    tools:context=".MainActivity2">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BackBtn2"
+        android:layout_width="127dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="23dp"
+            android:fontFamily="@font/belisa_plumilla"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.451"
+            tools:ignore="HardcodedText"
+            tools:letterSpacing="0.05"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="28dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="-3dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:rotation="90"
+            android:text="v"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="171dp"
+        android:fontFamily="@font/belisa_plumilla"
+        android:text="Ingredients"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BackBtn2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"
+        tools:letterSpacing="0.05" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="385dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rectangle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:foregroundGravity="clip_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/berries"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:text="Berries"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="184dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:gravity="center"
+                    android:text="Can be found on Berry Bushes. Berries restore 9 hunger when eaten"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="385dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rectangle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:foregroundGravity="clip_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/meat"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:text="Meat"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="184dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:gravity="center"
+                    android:text="Dropped by numerous fleshy creatures"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="385dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rectangle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:foregroundGravity="clip_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/fish"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:text="Fish"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="184dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:gravity="center"
+                    android:text="Typically comes from Ponds. It is also dropped by Merms."
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="385dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rectangle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:foregroundGravity="clip_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/vegetables"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:text="Vegetables"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="156dp"
+                    android:layout_height="72dp"
+                    android:layout_marginStart="208dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:gravity="center"
+                    android:text="Eat your greens, they're good for you most of the time... "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="385dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rectangle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:foregroundGravity="clip_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stick"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:text="Stick"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="184dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:gravity="center"
+                    android:text="Not meant for human consumption, used as a tool"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="385dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/rectangle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:foregroundGravity="clip_vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/eggs"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="116dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:text="Eggs"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="184dp"
+                    android:layout_height="71dp"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/belisa_plumilla"
+                    android:gravity="center"
+                    android:text="Yes, It's blue, healthier?"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText"
+                    tools:letterSpacing="0.05" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
